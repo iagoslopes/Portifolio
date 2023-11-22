@@ -1,10 +1,10 @@
-# Nome do projeto
+# <MeuPortifolio />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iagoslopes/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iagoslopes/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iagoslopes/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iagoslopes/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iagoslopes/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
+![GitHub language count](https://img.shields.io/github/languages/count/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
+![GitHub forks](https://img.shields.io/github/forks/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
 
 >Primeira ideia do portifólio:
 <img src="imagem.png" alt="Exemplo imagem">
