@@ -15,9 +15,15 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Realizar a estrutura HTML do site
-- [ ] Realizar a estrutura CSS do site
-- [ ] Montar o design final do site
+- [x] Construção e limpeza do projeto inicial(pasta).
+- [x] Fazer o deploy no vercel, para deixar o site pré-preparado.
+- [ ] Realizar a estrutura HTML do site.
+- [ ] Realizar a estrutura CSS do site.
+- [ ] Montar o design final do site.
+
+## 🌐 Acesso para o MeuPortifolio
+
+Já esta disponível para acesso, foi realizado [deploy no vercel](https://meuportifolio-iago.vercel.app).
 
 ## 💻 Pré-requisitos
 
@@ -26,9 +32,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
 - Você tem uma máquina `<Windows / Linux / Mac>`.
 
-## 🚀 Instalando <MeuPortifolio />
+## 🚀 Instalando MeuPortifolio
 
-Para instalar o <MeuPortifolio />, siga estas etapas:
+Para instalar o MeuPortifolio, siga estas etapas:
 
 Linux e macOS:
 
@@ -44,17 +50,17 @@ npm install
 npm run dev
 ```
 
-## ☕ Usando <MeuPortifolio />
+## ☕ Usando MeuPortifolio
 
-Para usar <MeuPortifolio />, siga estas etapas:
+Para usar MeuPortifolio, siga estas etapas:
 
 ```
 Ao entrar no site é possível usar a barra de scroll para usufruir de uma experiência maior
 ```
 
-## 📫 Contribuindo para <MeuPortifolio />
+## 📫 Contribuindo para MeuPortifolio
 
-Para contribuir com <MeuPortifolio />, siga estas etapas:
+Para contribuir com MeuPortifolio, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
