@@ -1,4 +1,4 @@
-# <MeuPortifolio />
+# MeuPortifolio
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
 ![GitHub language count](https://img.shields.io/github/languages/count/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
