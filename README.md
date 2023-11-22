@@ -25,6 +25,14 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Já esta disponível para acesso, foi realizado [deploy no vercel](https://meuportifolio-iago.vercel.app).
 
+## ☕ Usando MeuPortifolio
+
+Para usar MeuPortifolio, siga estas etapas:
+
+```
+Ao entrar no site é possível usar a barra de scroll para usufruir de uma experiência maior
+```
+
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
@@ -48,14 +56,6 @@ Windows:
 ```
 npm install
 npm run dev
-```
-
-## ☕ Usando MeuPortifolio
-
-Para usar MeuPortifolio, siga estas etapas:
-
-```
-Ao entrar no site é possível usar a barra de scroll para usufruir de uma experiência maior
 ```
 
 ## 📫 Contribuindo para MeuPortifolio
