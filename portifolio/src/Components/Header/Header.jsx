@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Fill, RiCloseLine } from 'react-icons/ri';
+import './header.css';
 
 function Header() {
     const [showMenu, setShowMenu] = useState(false);
@@ -7,8 +8,8 @@ function Header() {
 
     return (
         <header>
-            <div>
-                <a href="#">
+            <div className='logo_menu'>
+                <a href="#home">
                     {logo}
                 </a>
             </div>
@@ -30,7 +31,7 @@ function Header() {
                 className='btn_menu'
                 onClick={() =>
                     setShowMenu(!showMenu)}>
-                {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
+                {showMenu ? <RiCloseLine size={40} /> : <RiMenu3Fill size={40} />}
             </button>
         </header>
     )
