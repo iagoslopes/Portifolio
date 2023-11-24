@@ -1,8 +1,10 @@
+import './footer.css'
+
 function Footer() {
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer>
+            &copy; 2023 Iago's Portifólio - Todos os direitos reservados
+        </footer>
     )
 }
 
