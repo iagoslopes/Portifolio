@@ -9,6 +9,9 @@
 >Primeira ideia do portifólio:
 <img src="imagem.png" alt="Exemplo imagem">
 
+>Tela home do portifólio:
+<img src="imagem2.png" alt="Exemplo imagem">
+
 > Esse projeto consiste em mostrar as minhas habilidades e projetos dentro do meu portifolio
 
 ### Ajustes e melhorias
@@ -17,9 +20,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Construção e limpeza do projeto inicial(pasta).
 - [x] Fazer o deploy no vercel, para deixar o site pré-preparado.
-- [ ] Realizar a estrutura HTML do site.
+- [x] Criar as telas(Home, About, Projects e Contact) e os components(Header e footer).
+- [x] Realizar a estrutura HTML do site.
 - [ ] Realizar a estrutura CSS do site.
-- [ ] Montar o design final do site.
+- [ ] Montar o design dos projetos do site.
 
 ## 🌐 Acesso para o MeuPortifolio
 
