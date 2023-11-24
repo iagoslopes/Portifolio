@@ -1,3 +1,5 @@
+import './projects.css'
+
 function Projects() {
     return (
         <section id="projects">
