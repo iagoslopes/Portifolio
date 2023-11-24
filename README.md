@@ -10,7 +10,7 @@
 <img src="imagem.png" alt="Exemplo imagem">
 
 >Tela home do portifólio:
-<img src="imagem2.png" alt="Exemplo imagem">
+<img src="imagem2.PNG" alt="Exemplo imagem">
 
 > Esse projeto consiste em mostrar as minhas habilidades e projetos dentro do meu portifolio
 
