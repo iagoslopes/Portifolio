@@ -1,7 +1,36 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import copy from "copy-to-clipboard";
+import { FaClipboard, FaClipboardCheck } from "react-icons/fa";
+import { MdOutlineAttachEmail } from "react-icons/md";
+import "./contact.css";
 
 function Contact() {
+    const [emailCopied, setEmailCopied] = useState(false);
+    const [emailSpanClass, setEmailSpanClass] = useState('');
+    const copyText = 'iagodesouza2012@gmail.com';
+
+    const handleEmailCopy = () => {
+        //Função para copiar o texto
+        copy(copyText);
+
+        //Adiciona a classe ao <span> ao copiar o e-mail
+        setEmailSpanClass('email-copied');
+
+        //Reverte a classe após 0.5 segundos
+        setTimeout(() => {
+            setEmailSpanClass('');
+        }, 500);
+
+        //Atualiza o estado para refletir que o e-mail foi copiado
+        setEmailCopied(true);
+
+        //Reverte o estado após 2 segundos
+        setTimeout(() => {
+            setEmailCopied(false);
+        }, 2000);
+    };
+
     const [contact, setContact] = useState({
         subject: "",
         name: "",
@@ -28,7 +57,7 @@ function Contact() {
             )
             .then((res) => {
 
-                console.log("SUCCESS!", res.status, res.text);
+                alert("Message sent successfully! I will contact you soon.");
 
                 setContact({
                     subject: "",
@@ -47,45 +76,69 @@ function Contact() {
 
     return (
         <section id="contact">
-            <form onSubmit={handleSubmit}>
-                <p>Contact</p>
+            <div className='EmailCopy'>
+                <h2><span><MdOutlineAttachEmail /></span><p>Email Me</p></h2>
+                <div className="Email">
+                    <span className={emailSpanClass}>
+                        {copyText}
+                    </span>
+                    <button
+                        onClick={handleEmailCopy}
+                        disabled={emailCopied}
+                    >
+                        {emailCopied ? <FaClipboardCheck size={32} /> : <FaClipboard size={32} />}
+                    </button>
+                </div>
+            </div>
 
-                <input
-                    type="text"
-                    required
-                    autoComplete="none"
-                    placeholder="Subject"
-                    name="subject"
-                    value={contact.subject}
-                    onChange={handleChange}
-                />
-                <input
-                    type="text"
-                    required
-                    autoComplete="none"
-                    placeholder="Name"
-                    name="name"
-                    value={contact.name}
-                    onChange={handleChange}
-                />
-                <input
-                    type="text"
-                    required
-                    autoComplete="none"
-                    placeholder="Email"
-                    name="email"
-                    value={contact.email}
-                    onChange={handleChange}
-                />
-                <input
-                    type="text"
-                    required
-                    autoComplete="none"
-                    placeholder="Message"
-                    name="message"
-                    value={contact.message}
-                    onChange={handleChange}
-                />
+            <div className="title-contact">
+                <h2>Contact me</h2>
+            </div>
+
+            <form onSubmit={handleSubmit}>
+
+                <div className="form1">
+                    <input
+                        type="text"
+                        required
+                        autoComplete="none"
+                        placeholder="Name"
+                        name="name"
+                        value={contact.name}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        required
+                        autoComplete="none"
+                        placeholder="Email"
+                        name="email"
+                        value={contact.email}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="form2">
+                    <input
+                        type="text"
+                        required
+                        autoComplete="none"
+                        placeholder="Subject"
+                        name="subject"
+                        value={contact.subject}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="form3">
+                    <textarea
+                        type="text"
+                        required
+                        autoComplete="none"
+                        placeholder="Message"
+                        name="message"
+                        value={contact.message}
+                        onChange={handleChange}
+                    />
+                </div>
                 <button>Send</button>
             </form>
         </section>

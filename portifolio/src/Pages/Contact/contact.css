@@ -1,0 +1,138 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(lightgray 0%, white 90%);
+}
+
+.EmailCopy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.EmailCopy h2 {
+    display: flex;
+    gap: 5px;
+}
+
+.Email {
+    display: flex;
+    width: 300px;
+    gap: 1px;
+}
+
+.EmailCopy .Email span {
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+}
+
+.email-copied {
+    animation: blink 0.7s ease-out;
+}
+
+@keyframes blink {
+    50% {
+        background-color: #001971;
+    }
+}
+
+.EmailCopy .Email button {
+    width: 100%;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.title-contact {
+    display: flex;
+    width: 60vw;
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 50px 0 10px 0;
+}
+
+.title-contact h2 {
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form input:hover,
+form textarea:hover {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+form .form1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+form .form1 input {
+    width: 49%;
+    height: 40px;
+}
+
+form .form2 {
+    display: flex;
+    width: 100%;
+}
+
+form .form2 input {
+    width: 100%;
+    height: 40px;
+}
+
+form .form3 textarea {
+    width: 100%;
+    min-width: 50vw;
+    max-width: 50vw;
+    height: 150px;
+    min-height: 150px;
+    max-height: 500px;
+}
+
+form button {
+    width: 100px;
+    height: 40px;
+    background-color: #001971;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.5s ease-out;
+}
+
+form button:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
