@@ -68,7 +68,6 @@ body {
 .infos .infos-link {
     display: flex;
     gap: 10px;
-    z-index: 2;
     text-align: center;
     align-items: center;
     right: 0;
@@ -93,7 +92,6 @@ body {
 .container-text {
     display: flex;
     width: 90%;
-    position: relative;
     justify-content: flex-end;
     margin-top: 10px;
 }
