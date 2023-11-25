@@ -3,13 +3,13 @@ import './quadradinhos.css';
 
 const Quadradinhos = () => {
     const [columns, setColumns] = useState([]);
-    const [squareSize, setSquareSize] = useState(7);
+    const [squareSize, setSquareSize] = useState(5);
 
     useEffect(() => {
         const generateColumns = () => {
             const screenWidth = window.innerWidth;
             const numColumns = Math.floor(screenWidth / squareSize);
-            const numRows = 7;
+            const numRows = 10;
 
             const cols = [];
             for (let i = 0; i < numColumns; i++) {
@@ -18,7 +18,7 @@ const Quadradinhos = () => {
                     const isOddRow = j % 2 === 1;
                     const isOddSquare = i % 2 === 1;
 
-                    const sizeMultiplier = (numRows - j) / numRows;
+                    const sizeMultiplier = (numRows * 1.3 - j) / numRows;
 
                     squares.push(
                         <div
@@ -63,13 +63,13 @@ const Quadradinhos = () => {
 
 const QuadradinhosInverse = () => {
     const [columns, setColumns] = useState([]);
-    const [squareSize, setSquareSize] = useState(3);
+    const [squareSize, setSquareSize] = useState(5);
 
     useEffect(() => {
         const generateColumns = () => {
             const screenWidth = window.innerWidth;
             const numColumns = Math.floor(screenWidth / squareSize);
-            const numRows = 11;
+            const numRows = 20;
 
             const cols = [];
             for (let i = 0; i < numColumns; i++) {
@@ -78,14 +78,14 @@ const QuadradinhosInverse = () => {
                     const isOddRow = j % 2 === 1;
                     const isOddSquare = i % 2 === 1;
 
-                    const sizeMultiplier = ((numRows / 4) + j) / numRows; // Agora aumenta de tamanho para baixo
+                    const sizeMultiplier = ((numRows / 3) + j) / numRows; // Agora aumenta de tamanho para baixo
 
                     squares.push(
                         <div
                             key={`${i}-${j}`}
                             className="square"
                             style={{
-                                opacity: (isOddRow && !isOddSquare) || (!isOddRow && isOddSquare) ? 0 : 1,
+                                opacity: (isOddRow && !isOddSquare) || (!isOddRow && isOddSquare) ? 1 : 0,
                                 width: `${squareSize * sizeMultiplier}px`,
                                 height: `${squareSize * sizeMultiplier}px`,
                             }}
