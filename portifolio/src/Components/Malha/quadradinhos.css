@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container-quad {
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.square {
+    background-color: black;
+    margin: 0 auto;
+}
