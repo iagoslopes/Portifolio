@@ -1,6 +1,6 @@
 import { saveAs } from "file-saver";
 import CV_Iago from "../../../public/Iago_CV.pdf";
-import { Quadradinhos, QuadradinhosInverse } from '../../Components/Teste/Quadradinhos'
+import { Quadradinhos, QuadradinhosInverse } from '../../Components/Malha/Quadradinhos'
 import { RiGithubLine, RiLinkedinFill, RiFileList3Line } from "react-icons/ri";
 import './about.css'
 
