@@ -11,6 +11,8 @@ function Contact() {
     const copyText = 'iagodesouza2012@gmail.com';
 
     const handleEmailCopy = () => {
+        window.navigator.vibrate(300);
+
         //Função para copiar o texto
         copy(copyText);
 
@@ -56,7 +58,7 @@ function Contact() {
                 "ICbDvSMLYm4HhMASQ"
             )
             .then((res) => {
-
+                window.navigator.vibrate(300);
                 alert("Message sent successfully! I will contact you soon.");
 
                 setContact({
@@ -66,7 +68,7 @@ function Contact() {
                     message: "",
                 });
             }).catch((err) => {
-                console.log("ERRO:", err);
+                alert("Message not sent with successfully! Try again later.");
             });
     };
 

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(lightgray 0%, white 90%);
+    background-image: linear-gradient(#D8BFD8 0%, white 90%);
 }
 
 .EmailCopy {
@@ -122,7 +122,7 @@ form .form3 textarea {
 form button {
     width: 100px;
     height: 40px;
-    background-color: #001971;
+    background-color: #DDA0DD;
     color: white;
     border: none;
     border-radius: 5px;
