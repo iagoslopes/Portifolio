@@ -28,9 +28,13 @@
     margin: 30px 60px;
 }
 
+.information span {
+    font-weight: 700;
+}
+
 .about-link {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     z-index: 2;
     right: 0;
     left: 0;
@@ -59,7 +63,7 @@
 }
 
 .quadradrinhos-about .square {
-    background-color: lightgray;
+    background-color: rgb(255, 249, 182);
 }
 
 .quadradrinhosInverse-about .square {
