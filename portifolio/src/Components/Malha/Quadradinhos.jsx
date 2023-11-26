@@ -3,14 +3,14 @@ import './quadradinhos.css';
 
 const Quadradinhos = () => {
     const [columns, setColumns] = useState([]);
-    const [squareSize, setSquareSize] = useState(5);
+    const squareSize = 7;
 
     useEffect(() => {
-        const generateColumns = () => {
-            const screenWidth = window.innerWidth;
-            const numColumns = Math.floor(screenWidth / squareSize);
-            const numRows = 10;
+        const screenWidth = window.innerWidth;
+        const numColumns = Math.floor(screenWidth / squareSize);
+        const numRows = 8;
 
+        const generateColumns = () => {
             const cols = [];
             for (let i = 0; i < numColumns; i++) {
                 const squares = [];
@@ -18,7 +18,7 @@ const Quadradinhos = () => {
                     const isOddRow = j % 2 === 1;
                     const isOddSquare = i % 2 === 1;
 
-                    const sizeMultiplier = (numRows * 1.3 - j) / numRows;
+                    const sizeMultiplier = (numRows - j) / numRows;
 
                     squares.push(
                         <div
@@ -41,36 +41,22 @@ const Quadradinhos = () => {
             return cols;
         };
 
-        const handleResize = () => {
-            setSquareSize(5); // Redefina o tamanho inicial para recalcular com base na nova largura da tela
-            setColumns(generateColumns());
-        };
-
-        // Adiciona um ouvinte de evento para redimensionamento da tela
-        window.addEventListener('resize', handleResize);
-
-        // Executa a geração inicial de colunas
         setColumns(generateColumns());
-
-        // Remove o ouvinte de evento ao desmontar o componente
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, [squareSize]); // Adiciona squareSize como uma dependência para reexecutar o efeito quando ele muda
+    }, []);
 
     return <div className="container-quad">{columns}</div>;
 };
 
 const QuadradinhosInverse = () => {
     const [columns, setColumns] = useState([]);
-    const [squareSize, setSquareSize] = useState(5);
+    const squareSize = 10;
 
     useEffect(() => {
-        const generateColumns = () => {
-            const screenWidth = window.innerWidth;
-            const numColumns = Math.floor(screenWidth / squareSize);
-            const numRows = 20;
+        const screenWidth = window.innerWidth;
+        const numColumns = Math.floor(screenWidth / squareSize);
+        const numRows = 10;
 
+        const generateColumns = () => {
             const cols = [];
             for (let i = 0; i < numColumns; i++) {
                 const squares = [];
@@ -78,14 +64,14 @@ const QuadradinhosInverse = () => {
                     const isOddRow = j % 2 === 1;
                     const isOddSquare = i % 2 === 1;
 
-                    const sizeMultiplier = ((numRows / 3) + j) / numRows; // Agora aumenta de tamanho para baixo
+                    const sizeMultiplier = (j + 1) / numRows;
 
                     squares.push(
                         <div
                             key={`${i}-${j}`}
                             className="square"
                             style={{
-                                opacity: (isOddRow && !isOddSquare) || (!isOddRow && isOddSquare) ? 1 : 0,
+                                opacity: (isOddRow && !isOddSquare) || (!isOddRow && isOddSquare) ? 0 : 1,
                                 width: `${squareSize * sizeMultiplier}px`,
                                 height: `${squareSize * sizeMultiplier}px`,
                             }}
@@ -101,22 +87,8 @@ const QuadradinhosInverse = () => {
             return cols;
         };
 
-        const handleResize = () => {
-            setSquareSize(5); // Redefina o tamanho inicial para recalcular com base na nova largura da tela
-            setColumns(generateColumns());
-        };
-
-        // Adiciona um ouvinte de evento para redimensionamento da tela
-        window.addEventListener('resize', handleResize);
-
-        // Executa a geração inicial de colunas
         setColumns(generateColumns());
-
-        // Remove o ouvinte de evento ao desmontar o componente
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, [squareSize]); // Adiciona squareSize como uma dependência para reexecutar o efeito quando ele muda
+    }, []);
 
     return <div className="container-quad">{columns}</div>;
 };
