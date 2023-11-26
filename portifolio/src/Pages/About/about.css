@@ -65,3 +65,38 @@
 .quadradrinhosInverse-about .square {
     background-color: #D8BFD8;
 }
+
+@media screen and (max-width: 912px) {
+    .container-about {
+        flex-direction: column-reverse;
+    }
+
+    .title-about {
+        font-size: 3em;
+        text-transform: uppercase;
+        margin: 40px 0 0 20px;
+    }
+
+    .about {
+        width: 100vw;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .about-image {
+        width: 400px;
+        height: 500px;
+        margin-top: 50px;
+        border-radius: 50%;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-image {
+        width: 250px;
+        height: 300px;
+        margin-bottom: 50px;
+        border-radius: 50%;
+    }
+}

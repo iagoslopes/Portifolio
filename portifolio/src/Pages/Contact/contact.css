@@ -20,7 +20,7 @@
 
 .Email {
     display: flex;
-    width: 300px;
+    width: 350px;
     gap: 1px;
 }
 
@@ -135,4 +135,48 @@ form button:hover {
     cursor: pointer;
     background: black;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+    }
+
+    .title-contact {
+        width: 80vw;
+        font-size: 1.6em;
+    }
+
+    form {
+        width: 80vw;
+    }
+
+
+    form .form1 input {
+        width: 100%;
+    }
+
+    form .form2 {
+        flex-direction: column;
+    }
+
+    form .form2 input {
+        width: 100%;
+    }
+
+    form .form3 textarea {
+        width: 100%;
+        min-width: 80vw;
+        max-width: 80vw;
+        height: 150px;
+        min-height: 150px;
+        max-height: 500px;
+    }
+
+    .Email {
+        display: flex;
+        width: 315px;
+        gap: 1px;
+    }
+
 }

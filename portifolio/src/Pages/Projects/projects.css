@@ -1,4 +1,5 @@
 #projects {
+    min-height: 100vh;
     background: lightgray;
 }
 
@@ -28,4 +29,36 @@
 
 .quadradrinhos-projects .square {
     background-color: #001971;
+}
+
+@media screen and (max-width: 1300px) {
+    .container-projects {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .container-projects .project1,
+    .container-projects .project2 {
+        width: 600px;
+    }
+
+    .container-projects .project1 .img1,
+    .container-projects .project2 .img2 {
+        width: 600px;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-projects .project1,
+    .container-projects .project2 {
+        width: 300px;
+    }
+
+    .container-projects .project1 .img1,
+    .container-projects .project2 .img2 {
+        width: 300px;
+        height: 350px;
+    }
 }
