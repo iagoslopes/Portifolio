@@ -18,11 +18,11 @@ function Home() {
                             <span>react</span>
                         </div>
                         <div className="infos-link">
-                            <a href="https://www.linkedin.com/in/iago-souza-lopes/" target="_BLANK"><RiLinkedinBoxFill size={40} />
+                            <a href="https://www.linkedin.com/in/iago-souza-lopes/" target="_BLANK"><RiLinkedinBoxFill />
                             </a>
-                            <a href="https://github.com/iagoslopes" target="_BLANK"><RiGithubFill size={40} />
+                            <a href="https://github.com/iagoslopes" target="_BLANK"><RiGithubFill />
                             </a>
-                            <a onClick={handleDownload}><RiFileList3Line size={40} />
+                            <a onClick={handleDownload}><RiFileList3Line />
                             </a>
                         </div>
                     </div>
