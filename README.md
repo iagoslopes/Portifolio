@@ -22,7 +22,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Fazer o deploy no vercel, para deixar o site pré-preparado.
 - [x] Criar as telas(Home, About, Projects e Contact) e os components(Header e footer).
 - [x] Realizar a estrutura HTML do site.
-- [ ] Realizar a estrutura CSS do site.
+- [x] Realizar a estrutura CSS do site.
+- [x] Realizar a responsividade da estrutura CSS do site.
 - [ ] Montar o design dos projetos do site.
 
 ## 🌐 Acesso para o MeuPortifolio
