@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
-    background-image: radial-gradient(500px 500px at center,
+    background-image: radial-gradient(50% 50% at center,
             #203069,
             #192b6b,
             #001971 80%);
