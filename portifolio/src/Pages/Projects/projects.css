@@ -1,6 +1,6 @@
 #projects {
     min-height: 100vh;
-    background: lightgray;
+    background-image: linear-gradient(#D8BFD8 0%, rgb(255, 249, 182) 90%);
 }
 
 .container-projects {
