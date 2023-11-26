@@ -6,10 +6,10 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iagoslopes/portifolio?style=for-the-badge&labelColor=af552e&color=f8efd4)
 
->Primeira ideia do portifólio:
+>Primeira ideia do portifólio pelo [figma](https://www.figma.com/community/file/1310574702820657348/portifolio-iago):
 <img src="imagem.png" alt="Exemplo imagem">
 
->Tela home do portifólio:
+>Tela home atual do portifólio:
 <img src="imagem2.PNG" alt="Exemplo imagem">
 
 > Esse projeto consiste em mostrar as minhas habilidades e projetos dentro do meu portifolio
