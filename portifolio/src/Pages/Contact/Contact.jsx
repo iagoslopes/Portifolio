@@ -49,6 +49,7 @@ function Contact() {
             message: contact.message,
             email: contact.email,
         };
+        window.navigator.vibrate(1000);
 
         emailjs
             .send(
@@ -58,7 +59,6 @@ function Contact() {
                 "ICbDvSMLYm4HhMASQ"
             )
             .then((res) => {
-                window.navigator.vibrate(300);
                 alert("Message sent successfully! I will contact you soon.");
 
                 setContact({
@@ -103,16 +103,16 @@ function Contact() {
                     <input
                         type="text"
                         required
-                        autoComplete="none"
+                        autoComplete="off"
                         placeholder="Name"
                         name="name"
                         value={contact.name}
                         onChange={handleChange}
                     />
                     <input
-                        type="text"
+                        type="email"
                         required
-                        autoComplete="none"
+                        autoComplete="off"
                         placeholder="Email"
                         name="email"
                         value={contact.email}
@@ -123,7 +123,7 @@ function Contact() {
                     <input
                         type="text"
                         required
-                        autoComplete="none"
+                        autoComplete="off"
                         placeholder="Subject"
                         name="subject"
                         value={contact.subject}
@@ -134,7 +134,7 @@ function Contact() {
                     <textarea
                         type="text"
                         required
-                        autoComplete="none"
+                        autoComplete="off"
                         placeholder="Message"
                         name="message"
                         value={contact.message}
