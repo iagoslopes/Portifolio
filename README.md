@@ -89,13 +89,13 @@ Reponsável deste projeto:
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/rafael-a-freitas-4a41b2264/" title="LinkedIn">
+        <img src="fotoPerfilRafael" width="100px;" alt="Foto do Rafael no LinkedIn"/><br>
+        <sub>
+          <b>Rafael Araújo Freitas</b>
+        </sub>
+      </a>
+    </td>
   </tr>
-  <td align="center">
-    <a href="https://www.linkedin.com/in/rafael-a-freitas-4a41b2264/" title="LinkedIn">
-      <img src="fotoPerfilRafael" width="100px;" alt="Foto do Rafael no LinkedIn"/><br>
-      <sub>
-        <b>Rafael Araújo Freitas</b>
-      </sub>
-    </a>
-  </td>
 </table>
