@@ -9,32 +9,135 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .container-projects .project1,
 .container-projects .project2 {
     display: flex;
+    align-items: center;
     flex-direction: column;
     text-align: center;
+    color: black;
+}
+
+.container-projects .project1 .design,
+.container-projects .project2 .design {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    font-size: 0.75rem;
+    padding: 0 50px 25px 0;
+}
+
+.container-projects .project1 .design a,
+.container-projects .project2 .design a {
+    text-decoration: none;
 }
 
 .container-projects .project1 .img1,
 .container-projects .project2 .img2 {
     display: flex;
     width: 600px;
-    height: 700px;
-    background-color: #333;
+    height: 550px;
+}
+
+.container-projects .project1 .img1 .note {
+    width: 600px;
+    height: 310px;
+    position: relative;
+    top: 125px;
+}
+
+.container-projects .project1 .img1 #note {
+    width: 600px;
+    height: 310px;
+}
+
+.container-projects .project1 .img1 .celular {
+    width: 125px;
+    height: 250px;
+    position: relative;
+    top: 250px;
+    left: -600px;
+}
+
+.container-projects .project1 .img1 #celular {
+    width: 115px;
+    height: 230px;
+}
+
+.container-projects .project1 .img1 .tablet {
+    width: 225px;
+    height: 300px;
+    position: relative;
+    top: 165px;
+    left: -335px;
+}
+
+.container-projects .project1 .img1 #tablet {
+    width: 225px;
+    height: 300px;
+}
+
+.container-projects .project2 .img2 .tablet {
+    width: 425px;
+    height: 525px;
+    position: relative;
+    top: 0;
+    left: 60px;
+}
+
+.container-projects .project2 .img2 #tablet {
+    width: 425px;
+    height: 525px;
+}
+
+.container-projects .project2 .img2 .celular {
+    width: 150px;
+    height: 250px;
+    position: relative;
+    top: 290px;
+    left: -10px;
+}
+
+.container-projects .project2 .img2 #celular {
+    width: 150px;
+    height: 250px;
+}
+
+.container-projects .project1 .img1 #note,
+.container-projects .project1 .img1 #celular,
+.container-projects .project1 .img1 #tablet {
+    transition: transform 0.5s ease-in-out;
+}
+
+.container-projects .project1 .img1 #note:hover,
+.container-projects .project1 .img1 #celular:hover,
+.container-projects .project1 .img1 #tablet:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.container-projects .project2 .img2 #celular,
+.container-projects .project2 .img2 #tablet {
+    transition: transform 0.5s ease-in-out;
+}
+
+.container-projects .project2 .img2 #celular:hover,
+.container-projects .project2 .img2 #tablet:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .quadradrinhos-projects .square {
-    background-color: #001971;
+    background-color: black;
 }
 
 @media screen and (max-width: 1300px) {
     .container-projects {
         flex-direction: column;
-        gap: 100px;
+        gap: 250px;
     }
 
     .container-projects .project1,
@@ -45,11 +148,126 @@
     .container-projects .project1 .img1,
     .container-projects .project2 .img2 {
         width: 600px;
-        height: 700px;
+        height: 550px;
+    }
+
+    .container-projects .project1 .img1 .note {
+        width: 600px;
+        height: 310px;
+        top: 125px;
+    }
+
+    .container-projects .project1 .img1 #note {
+        width: 600px;
+        height: 310px;
+    }
+
+    .container-projects .project1 .img1 .celular {
+        width: 125px;
+        height: 250px;
+        top: 250px;
+        left: -600px;
+    }
+
+    .container-projects .project1 .img1 #celular {
+        width: 115px;
+        height: 230px;
+    }
+
+    .container-projects .project1 .img1 .tablet {
+        width: 225px;
+        height: 300px;
+        top: 165px;
+        left: -335px;
+    }
+
+    .container-projects .project1 .img1 #tablet {
+        width: 225px;
+        height: 300px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .container-projects {
+        gap: 150px;
+    }
+
+    .container-projects .project1,
+    .container-projects .project2 {
+        width: 400px;
+    }
+
+    .container-projects .project1 .img1,
+    .container-projects .project2 .img2 {
+        width: 400px;
+        height: 450px;
+    }
+
+    .container-projects .project1 .img1 .note {
+        width: 450px;
+        height: 250px;
+        top: 125px;
+        left: -25px;
+    }
+
+    .container-projects .project1 .img1 #note {
+        width: 450px;
+        height: 250px;
+    }
+
+    .container-projects .project1 .img1 .celular {
+        width: 125px;
+        height: 250px;
+        top: 250px;
+        left: -475px;
+    }
+
+    .container-projects .project1 .img1 #celular {
+        width: 85px;
+        height: 170px;
+    }
+
+    .container-projects .project1 .img1 .tablet {
+        width: 175px;
+        height: 240px;
+        top: 160px;
+        left: -280px;
+    }
+
+    .container-projects .project1 .img1 #tablet {
+        width: 175px;
+        height: 240px;
+    }
+
+    .container-projects .project2 .img2 .tablet {
+        width: 325px;
+        height: 425px;
+        top: 0;
+        left: 20px;
+    }
+
+    .container-projects .project2 .img2 #tablet {
+        width: 325px;
+        height: 425px;
+    }
+
+    .container-projects .project2 .img2 .celular {
+        width: 100px;
+        height: 200px;
+        top: 240px;
+        left: -40px;
+    }
+
+    .container-projects .project2 .img2 #celular {
+        width: 100px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container-projects {
+        gap: 125px;
+    }
 
     .container-projects .project1,
     .container-projects .project2 {
@@ -58,7 +276,67 @@
 
     .container-projects .project1 .img1,
     .container-projects .project2 .img2 {
-        width: 300px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .container-projects .project1 .img1 .note {
+        width: 350px;
+        height: 200px;
+        top: 125px;
+        left: 1px;
+    }
+
+    .container-projects .project1 .img1 #note {
+        width: 350px;
+        height: 200px;
+    }
+
+    .container-projects .project1 .img1 .celular {
+        width: 125px;
+        height: 250px;
+        top: 200px;
+        left: -350px;
+    }
+
+    .container-projects .project1 .img1 #celular {
+        width: 75px;
+        height: 150px;
+    }
+
+    .container-projects .project1 .img1 .tablet {
+        width: 150px;
+        height: 200px;
+        top: 160px;
+        left: -212px;
+    }
+
+    .container-projects .project1 .img1 #tablet {
+        width: 140px;
+        height: 180px;
+    }
+
+    .container-projects .project2 .img2 .tablet {
+        width: 325px;
+        height: 425px;
+        top: 0;
+        left: 30px;
+    }
+
+    .container-projects .project2 .img2 #tablet {
+        width: 250px;
         height: 350px;
+    }
+
+    .container-projects .project2 .img2 .celular {
+        width: 100px;
+        height: 200px;
+        top: 190px;
+        left: -40px;
+    }
+
+    .container-projects .project2 .img2 #celular {
+        width: 90px;
+        height: 180px;
     }
 }
