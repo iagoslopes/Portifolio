@@ -54,6 +54,7 @@ Linux e macOS:
 ```
 npm install
 ```
+```
 npm run dev
 ```
 
@@ -61,6 +62,7 @@ Windows:
 
 ```
 npm install
+```
 ```
 npm run dev
 ```
