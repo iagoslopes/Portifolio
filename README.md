@@ -24,7 +24,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Realizar a estrutura HTML do site.
 - [x] Realizar a estrutura CSS do site.
 - [x] Realizar a responsividade da estrutura CSS do site.
-- [ ] Montar o design dos projetos do site.
+- [x] Montar o design dos projetos do site.
 
 ## 🌐 Acesso para o MeuPortifolio
 
@@ -86,6 +86,16 @@ Reponsável deste projeto:
         <img src="https://avatars.githubusercontent.com/u/128859658?v=4" width="100px;" alt="Foto do Iago Lopes no GitHub"/><br>
         <sub>
           <b>Iago de Souza Lopes</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/rafael-a-freitas-4a41b2264/" title="LinkedIn">
+        <img src="fotoPerfilRafael" width="100px;" alt="Foto do Rafael no LinkedIn"/><br>
+        <sub>
+          <b>Rafael Araújo Freitas</b>
         </sub>
       </a>
     </td>
